@@ -15,9 +15,6 @@ public class ConferenceController {
 
     @Get("/random")
     public Conference randomConf() {
-        Conference conference = new Conference();
-        conference.setName("abc");
-//        return conferenceService.randomConf();
-        return conference;
+        return conferenceService.randomConf();
     }
 }
