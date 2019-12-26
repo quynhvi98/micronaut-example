@@ -33,6 +33,11 @@ dependencies {
 	testCompile "io.micronaut.test:micronaut-test-junit5"
 	testCompile "org.junit.jupiter:junit-jupiter-api"
 	testRuntime "org.junit.jupiter:junit-jupiter-engine"
+	// https://mvnrepository.com/artifact/org.projectlombok/lombok
+	implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+	compileOnly 'org.projectlombok:lombok:1.18.8'
+	annotationProcessor "org.projectlombok:lombok:1.18.8"
+
 }
 test.classpath += configurations.developmentOnly
 mainClassName = "com.mservice.dvcwrapper.Application"

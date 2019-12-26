@@ -5,7 +5,7 @@ import com.mservice.dvcwrapper.service.ConferenceService;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 
-@Controller("conferences")
+@Controller("/conferences")
 public class ConferenceController {
     private final ConferenceService conferenceService;
 
@@ -15,6 +15,9 @@ public class ConferenceController {
 
     @Get("/random")
     public Conference randomConf() {
-        return conferenceService.randomConf();
+        Conference conference = new Conference();
+        conference.setName("abc");
+//        return conferenceService.randomConf();
+        return conference;
     }
 }

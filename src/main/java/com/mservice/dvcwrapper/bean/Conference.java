@@ -1,20 +1,11 @@
 package com.mservice.dvcwrapper.bean;
 
 import io.micronaut.core.annotation.Introspected;
+import lombok.Data;
+
 
 @Introspected
+@Data
 public class Conference {
     private String name;
-
-    public Conference(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
