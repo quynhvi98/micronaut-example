@@ -1,0 +1,1 @@
+mn create-app com-mservice-dvcwrapper --profile service --lang java --build gradle--features asciidoctor

@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: com.mservice.dvcwrapper
+---
+testFramework: junit
+sourceLanguage: java
