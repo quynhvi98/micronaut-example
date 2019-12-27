@@ -2,4 +2,9 @@ micronaut:
   application:
     name: DVCWrapper
   server:
-    port: -1
+    port: 8080
+  security:
+    enabled: true
+    endpoints:
+      login:
+        enabled: true

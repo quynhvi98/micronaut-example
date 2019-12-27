@@ -1,5 +1,6 @@
 profile: service
 defaultPackage: com.mservice.dvcwrapper
 ---
-testFramework: junit
+#testFramework: junit
+testFramework: spock
 sourceLanguage: java

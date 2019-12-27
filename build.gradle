@@ -37,6 +37,16 @@ dependencies {
 	implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
 	compileOnly 'org.projectlombok:lombok:1.18.8'
 	annotationProcessor "org.projectlombok:lombok:1.18.8"
+	//security
+	annotationProcessor "io.micronaut:micronaut-security"
+	implementation "io.micronaut:micronaut-security"
+	//test
+	testAnnotationProcessor "io.micronaut:micronaut-inject-java"
+	testImplementation "io.micronaut:micronaut-inject-groovy"
+	testImplementation("org.spockframework:spock-core") {
+		exclude group: "org.codehaus.groovy", module: "groovy-all"
+	}
+	testImplementation "io.micronaut.test:micronaut-test-spock"
 
 }
 test.classpath += configurations.developmentOnly
