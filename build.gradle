@@ -40,6 +40,7 @@ dependencies {
 	//security
 	annotationProcessor "io.micronaut:micronaut-security"
 	implementation "io.micronaut:micronaut-security"
+	implementation "io.micronaut:micronaut-security-session"
 	//test
 	testAnnotationProcessor "io.micronaut:micronaut-inject-java"
 	testImplementation "io.micronaut:micronaut-inject-groovy"
@@ -47,7 +48,9 @@ dependencies {
 		exclude group: "org.codehaus.groovy", module: "groovy-all"
 	}
 	testImplementation "io.micronaut.test:micronaut-test-spock"
-
+	//velocity
+	implementation "io.micronaut:micronaut-views-velocity"
+	runtime "org.apache.velocity:velocity-engine-core:2.0"
 }
 test.classpath += configurations.developmentOnly
 mainClassName = "com.mservice.dvcwrapper.Application"
