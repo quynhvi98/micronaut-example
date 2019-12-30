@@ -51,6 +51,10 @@ dependencies {
 	//velocity
 	implementation "io.micronaut:micronaut-views-velocity"
 	runtime "org.apache.velocity:velocity-engine-core:2.0"
+	//graal native image
+	compileOnly "org.graalvm.nativeimage:svm:19.3.0"
+	compileOnly "com.oracle.substratevm:svm"
+	annotationProcessor "io.micronaut:micronaut-graal"
 }
 test.classpath += configurations.developmentOnly
 mainClassName = "com.mservice.dvcwrapper.Application"
